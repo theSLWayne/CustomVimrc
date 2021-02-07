@@ -1,0 +1,51 @@
+set nocompatible
+filetype off
+
+set tabstop=2
+set shiftwidth=2
+set autoindent
+set smartindent
+set nocp
+set backspace=indent,eol,start
+
+colorscheme gruvbox
+
+set number
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+let g:gruvbox_contrast_dark = 'soft'
+set background=dark
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'leafOfTree/vim-vue-plugin'
+
+Bundle 'martskins/vim-ballerina'
+
+Plugin 'flazz/vim-colorschemes'
+
+Plugin 'townk/vim-autoclose'
+
+Plugin 'docunext/closetag.vim'
+
+Plugin 'sirver/ultisnips'
+
+Plugin 'jvirtanen/vim-octave'
+
+Plugin 'morhetz/gruvbox'
+
+"Plugin 'altercation/vim-colors-solarized'
+
+Plugin 'preservim/nerdtree'
+
+Plugin 'neovimhaskell/haskell-vim'
+
+Plugin 'eagletmt/neco-ghc'
+
+call vundle#end()
+filetype plugin indent on
+
+" The script to load NERDTree automatically when vim starts up
+autocmd vimenter * NERDTree
